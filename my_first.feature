@@ -14,7 +14,7 @@ Feature: Login feature
     Then I press the "Default" button
     Then I press the "否" button
     Then I wait for 10 seconds
-    Then I wait for 10 seconds
+    Then I wait for 15 seconds
     Then I press "王小丽"
     Then I see the text "王小丽"
     Then I press "设置"
