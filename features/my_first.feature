@@ -20,4 +20,3 @@ Feature: Login feature
     Then I press "设置"
     Then I press "退出登录"
     Then I press "是"
-  
