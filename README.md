@@ -27,6 +27,6 @@ Above tools could be downloaded from baidu share, http://pan.baidu.com/s/1pLtg5W
     I want to login, logout and re-login. 
 3. Scenarios should be titled as number_scneario description, like 001 I can not log into my app with wrong password
 4. Use cucumber keywords smartly. 
-    Given（给定）	   setup（创建测试所需环境）
-    When（当）	       test（触发被测事件）
-    Then（则）	       assert(断言，验证结果)
+    |Given（给定)|setup(创建测试所需环境)|
+    |When（当）	 |test（触发被测事件）   |
+    |Then（则）	 |assert(断言，验证结果) |
