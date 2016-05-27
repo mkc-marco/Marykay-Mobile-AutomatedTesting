@@ -1,8 +1,10 @@
+@Neo
 Feature: 01 login feature
           In order to simulate login activities
           As a valid consultant
           I want to login, logout and re-login
 
+  @p1
   Scenario: 001 I can not log into my app with wrong password
    Given I press the "Internal - UAT" button
    And I press the "否" button
@@ -14,6 +16,7 @@ Feature: 01 login feature
    And I wait for 10 seconds
    Then I don't see "希妍"
 
+  @p0
   Scenario: 002 I can log into my app with correct password
    Given I press the "Internal - UAT" button
    And I press the "否" button
@@ -28,6 +31,7 @@ Feature: 01 login feature
    And I press "希妍"
    Then I see "希妍"
 
+  @p0
   Scenario: 003 I can re-log into my app automatically and log out
     Given I press the "Internal - UAT" button
     And I press the "否" button
@@ -39,6 +43,7 @@ Feature: 01 login feature
     And I wait for 10 seconds
     Then I see "登录"
 
+  @p1
   Scenario: 004 I could switch the account and view the password and then login in
     Given I press the "Internal - UAT" button
     And I press the "否" button
@@ -54,6 +59,7 @@ Feature: 01 login feature
     Then I see "希妍"
 
   #re-run the scenario to log out the app
+  @p1
   Scenario: 003 I can re-log into my app automatically and log out
     Given I press the "Internal - UAT" button
     And I press the "否" button
