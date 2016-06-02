@@ -12,9 +12,9 @@ Feature: 01 login feature
    And I wait for 5 seconds
    When I enter "000000000065" into input field number 1
    And I enter "pink" into input field number 2
-   And I press the "登录" button
-   And I wait for 10 seconds
-   Then I don't see "希妍"
+    And I press the "登录" button
+    And I wait for 10 seconds
+    Then I don't see "希妍"
 
   @p0
   Scenario: 002 I can log into my app with correct password
