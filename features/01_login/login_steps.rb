@@ -1,7 +1,6 @@
 Then /^I select "([^\"]*)" environment/ do |text|
   tap_when_element_exists("android.widget.Button {text CONTAINS[c] '#{text}'}")
   tap_when_element_exists("android.widget.Button {text CONTAINS[c] '否'}")
- 
 end
 
 Then /^I log in with correct password/ do 

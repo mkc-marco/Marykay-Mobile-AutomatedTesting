@@ -9,6 +9,7 @@ Follow https://github.com/calabash/calabash-android/blob/master/documentation/in
 * Android Studio or Sublime for scripting
 * Ansicon for running cucumber
 * UIautomatorviewer(under Android SDK) for locating controls 
+* Sublime Text for editing Ruby 
 
 上述工具都已上传到百度云盘, http://pan.baidu.com/s/1pLtg5Wf
 
