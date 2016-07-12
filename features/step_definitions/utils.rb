@@ -1,28 +1,11 @@
 
-def random_string(len)
-	(('a'..'z').to_a + ('A'..'Z').to_a).sample(len).join
-end
-
-def random_number(len)
-	(0..9).to_a.sample(len).join
-end
-
-def random_email
-	(('a'..'z').to_a + ('A'..'Z').to_a).sample(6).join + (0..9).to_a.sample(6).join + "@mkcorp.com"
-end
-
-def check_text_length(index,len)
-	actual_len = query("android.widget.EditText")[index-1]["text"].length
-	Loggin.log_error("Actual length of the text is #{actual_len} not equal to excepted length #{len}") if actual_len != len
-end
-
 def get_tw_gov_id
 first =(('A'..'Z').to_a).sample(1).join + '2' +(0..9).to_a.sample(8).join
-puts first
 if validate_gov_id first
-return first
+	return first
 else
-return get_tw_gov_id
+    nextValue = get_tw_gov_id
+	return nextValue
 end
 end
 
@@ -46,4 +29,29 @@ return false
 else
 return true
 end 
+end
+
+def random_string(len)
+	str=""
+	len.times do
+      str += ('a'..'z').to_a.sample
+	end
+	return str
+end
+
+def random_number(len)
+	str=""
+	len.times do
+      str += (0..9).to_a.sample.to_s
+	end
+	return str
+end
+
+def random_email
+	('a'..'z').to_a.sample(6).join + (0..9).to_a.sample(6).join + "@mkcorp.com"
+end
+
+def check_text_length(index,len)
+	actual_len = query("android.widget.EditText")[index-1]["text"].length
+	raise "Actual length of the text is #{actual_len} not equal to expected length #{len}" if actual_len != len
 end
