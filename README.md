@@ -49,7 +49,7 @@ Follow https://github.com/calabash/calabash-android/blob/master/documentation/in
 # Tips
 * 在开发过程中使用tag, 来运行单一用例，避免重复运行不需要的场景
 ```
-d:\>calabash-android 116.apk --tags @wip
+d:\>calabash-android run 116.apk --tags @wip
 ```    
 * 尽量使用declarative(informative)语言来描述场景， 参见01_login_declarative.feature 这样写出来的用例更容易沟通，也更简洁。
 * 有些场景下使用imperative(communicative)语言来描述会更加高效，比如需要使用表格来输入多组数据

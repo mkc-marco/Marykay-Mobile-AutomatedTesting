@@ -1,9 +1,10 @@
-@humphrey @wip
+@humphrey
 Feature: 02 category navigation feature
   In order to view products belong to different categories
   As a valid consultant
   I want to switch the category and subcategory
 
+#Need to login first
   @p0
   Scenario Outline: 001 I can switch thecategory and subcategory
     Given  I select "UAT" environment

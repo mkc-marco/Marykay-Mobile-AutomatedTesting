@@ -4,7 +4,6 @@ Feature: 01 Apply VIP
           As a valid user
           I want to finish online agreement
 
-
   @p1
   Scenario: 001 Apply VIP
    Given I select "UAT" environment

@@ -4,6 +4,7 @@ Feature: 01 product search feature
   As a valid consultant
   I want to search by product name, product id, effective an description.
 
+#Need to login first
   @p0
   Scenario Outline: 001 I can search the products by different criteria
     Given  I select "UAT" environment
