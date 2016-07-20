@@ -5,7 +5,7 @@
 Follow https://github.com/calabash/calabash-android/blob/master/documentation/installation.md to install JDK, Android SDK, Ruby, Ant and then calabash-android 
 
 ## Tools 
-* Guthub Desktop for version control
+* Github Desktop for version control
 * Android Studio or Sublime for scripting
 * Ansicon for running cucumber
 * UIautomatorviewer(under Android SDK) for locating controls 
